@@ -12,7 +12,7 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
         </Head>
-        <body className="overflow-x-hidden manrope-400">
+        <body className="overflow-x-hidden manrope-400 no-scrollbar">
           <Main />
           <NextScript />
           <div id="modal-root"></div>
