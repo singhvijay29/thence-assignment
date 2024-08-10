@@ -4,6 +4,7 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
+         <title>Thence Assignment</title>
         <Head>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
