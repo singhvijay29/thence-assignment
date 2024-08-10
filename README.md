@@ -14,7 +14,7 @@ Framer Motion: A popular animation library for creating smooth and performant an
 To get started with the project, follow these simple steps:
 
 ## Clone the repository or download the project files.
-Run npm i to install the project dependencies.
-Run npm run dev to start the development server.
+Run ```bash npm i ``` to install the project dependencies.
+Run ```bash npm run dev ``` to start the development server.
 Deployment
 The project is set up to be deployed on Vercel, a popular platform for hosting and deploying modern web applications. Simply push your changes to the repository, and Vercel will take care of the rest.
