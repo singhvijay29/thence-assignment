@@ -64,7 +64,7 @@ const RegistrationForm = () => {
       </div>
       {!isFormSubmitted ? (
         <div className="max-w-[588px] w-full relative">
-          <div className="text-center mt-[40px] mb-[62px] flex justify-center items-center flex-col">
+          <div className="text-center mt-[20px] mb-[62px] flex justify-center items-center flex-col">
             <RegisterFormVector />
             <h3 className="text-32 md:text-[56px] manrope-600 text-[#1C1C1C] leading-[47.2px] md:leading-[67.2px]">
               Start your success
