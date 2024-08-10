@@ -11,14 +11,6 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
             rel="stylesheet"
           />
-          <link
-            href="https://fonts.cdnfonts.com/css?family=Switzer:wght@400;500;700&display=swap"
-            rel="stylesheet"
-          />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Switzer:wght@400;500;700&display=swap"
-            rel="stylesheet"
-          />
         </Head>
         <body className="overflow-x-hidden manrope-400 no-scrollbar">
           <Main />

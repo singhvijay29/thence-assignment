@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import NavbarLogo from "./Icons/NavbarLogo";
-import HamburgerIcon from "./Icons/HamburgerIcon";
-import { useDisclosure } from "@chakra-ui/react";
+import { useRouter } from "next/router";
 
 const Navbar = ({ onOpen, isOpen, onClose }: any) => {
+  const router = useRouter();
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -45,7 +45,10 @@ const Navbar = ({ onOpen, isOpen, onClose }: any) => {
         </button>
 
         <div className="hidden md:flex items-center gap-4 ">
-          <button className="border-[1.31px] border-[#EAEAEA] rounded-[107.06px] w-[189.56px] h-[77.22px] manrope-500 bg-white text-[18px] hover:bg-[#F1F1F1] transition duration-400">
+          <button
+            onClick={() => router?.push("/registration-form")}
+            className="border-[1.31px] border-[#EAEAEA] rounded-[107.06px] w-[189.56px] h-[77.22px] manrope-500 bg-white text-[18px] hover:bg-[#F1F1F1] transition duration-400"
+          >
             Get projects
           </button>
           <button className="border-[1.31px] border-[#EAEAEA] rounded-[107.06px]  w-[223.39px] h-[77.22px] bg-[#1C1C1C] text-[#FFFFFF] text-[18px] hover:bg-[#4E4E4E] transition duration-400">
