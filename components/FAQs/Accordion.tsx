@@ -30,11 +30,11 @@ export default function Accordion({
     >
       <motion.h2
         className={cn(
-          "transition-all duration-300 bg-right bg-no-repeat py-2 text-[20px] manrope-600 flex justify-between items-center"
+          "transition-all duration-300 bg-right bg-no-repeat py-2 text-16 md:text-[20px] manrope-600 flex justify-between items-center"
         )}
       >
         <div className="w-[80%]">{question}</div>
-        {expanded ? <PlusIcon /> : <MinusIcon />}
+        {!isOpen ? <PlusIcon /> : <MinusIcon />}
       </motion.h2>
       <AnimatePresence>
         {isOpen && (
@@ -53,7 +53,7 @@ export default function Accordion({
             }}
             className=""
           >
-            <motion.div className="pb-2 pt-4 text-[15px] manrope-400 text-[#617275]">
+            <motion.div className="pb-2 pt-4 text-12 md:text-[15px] manrope-400 text-[#617275]">
               {answer}
             </motion.div>
           </motion.div>

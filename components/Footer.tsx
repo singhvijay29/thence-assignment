@@ -2,9 +2,9 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="px-8 pb-8 pt-5">
-      <div className="bg-[#F5F5F5] py-[60px] px-[48px] rounded-[40px] flex items-center justify-between">
-        <div className="manrope-600 text-[18px] text-[#1C1C1C] flex items-center gap-[10px]">
+    <div className="px-6 md:px-8 pb-5 md:pb-8 pt-3 md:pt-5">
+      <div className="bg-[#F5F5F5] py-6 md:py-[60px] px-[48px] rounded-[24px] md:rounded-[40px] flex flex-col md:flex-row gap-4 md:gap-8 items-center justify-between">
+        <div className="manrope-600 text-12 md:text-[18px] text-[#1C1C1C] flex items-center gap-[10px]">
           <svg
             width="25"
             height="24"
@@ -19,7 +19,7 @@ const Footer = () => {
           </svg>
           Talup 2023. All rights reserved
         </div>
-        <div className="manrope-400 text-[18px] text-[#1C1C1C] flex items-center gap-[52px]">
+        <div className="manrope-400 text-10 md:text-[18px] text-[#1C1C1C] flex items-center gap-[52px]">
           <div className="underline cursor-pointer">Terms & Conditions</div>
           <div className="underline cursor-pointer">Privacy Policy</div>
         </div>
