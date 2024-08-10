@@ -24,7 +24,8 @@ const RegistrationForm = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors, isValid },
+    watch,
+    formState: { errors },
   } = useForm({
     resolver: yupResolver(validationSchema),
   });
@@ -50,12 +51,12 @@ const RegistrationForm = () => {
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-[#FFFFFF]">
-      <div className="fixed top-[32px] w-full flex items-center justify-between px-[52px]">
+      <div className="fixed top-2 md:top-[32px] w-full flex items-center justify-between px-6 md:px-[52px]">
         <NavbarLogo />
         {!isFormSubmitted && (
           <button
             onClick={() => router?.replace("/")}
-            className="hover:scale-110 transition duration-400"
+            className="md:hover:scale-110 transition duration-400 scale-[0.7] md:scale-[1]"
           >
             <CrossIcon />
           </button>
@@ -63,14 +64,15 @@ const RegistrationForm = () => {
       </div>
       {!isFormSubmitted ? (
         <div className="max-w-[588px] w-full relative">
-          <div className="text-center mb-[62px] flex justify-center items-center flex-col">
+          <div className="text-center mt-[80px] mb-[62px] flex justify-center items-center flex-col">
             <RegisterFormVector />
-            <h3 className="text-[56px] manrope-600 text-[#1C1C1C] leading-[67.2px]">
-              Start your success Journey here!
+            <h3 className="text-32 md:text-[56px] manrope-600 text-[#1C1C1C] leading-[47.2px] md:leading-[67.2px]">
+              Start your success
+              <br /> Journey here!
             </h3>
           </div>
 
-          <form className="px-[86px]" onSubmit={handleSubmit(onSubmit)}>
+          <form className="px-6 md:px-[86px]" onSubmit={handleSubmit(onSubmit)}>
             <input
               {...register("name")}
               style={{
@@ -104,7 +106,7 @@ const RegistrationForm = () => {
               </div>
             )}
             <button
-              disabled={!isValid}
+              disabled={!watch("email") || !watch("name")}
               type="submit"
               className="w-full h-[77.22px] bg-[#1C1C1C] rounded-[107.06px] text-[18px] manrope-600 text-[#FFFFFF] mt-[47px] disabled:bg-[#C9C9C9] disabled:cursor-not-allowed"
             >

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import SuccessStories from "./Icons/SuccessStories";
 import Image from "next/image";
 import FortyPercent from "./Icons/FortyPercent";
@@ -118,10 +118,10 @@ const HeroSection = () => {
             {textCarousalText?.map((el, i) => (
               <div
                 key={i}
-                style={{
-                  background: currentIndex === i ? "#2DA950" : "#E4E3E3",
+                onClick={() => {
+                  setCurrentIndex(i);
                 }}
-                className={`h-[10.75px] w-[10.75px] rounded-full ${
+                className={`h-[10.75px] w-[10.75px] cursor-pointer transition duration-400 rounded-full ${
                   currentIndex === i
                     ? "bg-[#2DA950]"
                     : "bg-[#E4E3E3] hover:bg-[#CAD0CB]"
