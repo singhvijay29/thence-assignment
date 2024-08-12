@@ -37,10 +37,10 @@ const HeroSection = () => {
     const halfMillion = document.querySelector(".halfMillion") as HTMLElement;
 
     if (fortyPercent) {
-      fortyPercent.style.transform = `translateY(${scrollPosition * 0.15}px)`;
+      fortyPercent.style.transform = `translateY(${scrollPosition * 0.2}px)`;
     }
     if (tenDays) {
-      tenDays.style.transform = `translateY(${scrollPosition * 0.1}px)`;
+      tenDays.style.transform = `translateY(${scrollPosition * 0.15}px)`;
     }
     if (halfMillion) {
       halfMillion.style.transform = `translateY(${scrollPosition * 0.075}px)`;
